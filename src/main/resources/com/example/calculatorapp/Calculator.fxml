@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.layout.ColumnConstraints?>
+<VBox spacing="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.calculatorapp.CalculatorController">
+    <TextField fx:id="display" editable="false" style="-fx-font-size: 24; -fx-background-color: white; -fx-text-fill: orange;" />
+    <GridPane hgap="10" vgap="10" style="-fx-background-color: orange;">
+        <columnConstraints>
+            <ColumnConstraints percentWidth="25"/>
+            <ColumnConstraints percentWidth="25"/>
+            <ColumnConstraints percentWidth="25"/>
+            <ColumnConstraints percentWidth="25"/>
+        </columnConstraints>
+        <Button text="1" onAction="#handleNumber" GridPane.rowIndex="0" GridPane.columnIndex="0" style="-fx-font-size: 20; -fx-background-color: white; -fx-text-fill: orange;"/>
+        <Button text="2" onAction="#handleNumber" GridPane.rowIndex="0" GridPane.columnIndex="1" style="-fx-font-size: 20; -fx-background-color: white; -fx-text-fill: orange;"/>
+        <Button text="3" onAction="#handleNumber" GridPane.rowIndex="0" GridPane.columnIndex="2" style="-fx-font-size: 20; -fx-background-color: white; -fx-text-fill: orange;"/>
+        <Button text="+" onAction="#handleOperator" GridPane.rowIndex="0" GridPane.columnIndex="3" style="-fx-font-size: 20; -fx-background-color: white; -fx-text-fill: orange;"/>
+
+        <Button text="4" onAction="#handleNumber" GridPane.rowIndex="1" GridPane.columnIndex="0" style="-fx-font-size: 20; -fx-background-color: white; -fx-text-fill: orange;"/>
+        <Button text="5" onAction="#handleNumber" GridPane.rowIndex="1" GridPane.columnIndex="1" style="-fx-font-size: 20; -fx-background-color: white; -fx-text-fill: orange;"/>
+        <Button text="6" onAction="#handleNumber" GridPane.rowIndex="1" GridPane.columnIndex="2" style="-fx-font-size: 20; -fx-background-color: white; -fx-text-fill: orange;"/>
+        <Button text="-" onAction="#handleOperator" GridPane.rowIndex="1" GridPane.columnIndex="3" style="-fx-font-size: 20; -fx-background-color: white; -fx-text-fill: orange;"/>
+
+        <Button text="7" onAction="#handleNumber" GridPane.rowIndex="2" GridPane.columnIndex="0" style="-fx-font-size: 20; -fx-background-color: white; -fx-text-fill: orange;"/>
+        <Button text="8" onAction="#handleNumber" GridPane.rowIndex="2" GridPane.columnIndex="1" style="-fx-font-size: 20; -fx-background-color: white; -fx-text-fill: orange;"/>
+        <Button text="9" onAction="#handleNumber" GridPane.rowIndex="2" GridPane.columnIndex="2" style="-fx-font-size: 20; -fx-background-color: white; -fx-text-fill: orange;"/>
+        <Button text="*" onAction="#handleOperator" GridPane.rowIndex="2" GridPane.columnIndex="3" style="-fx-font-size: 20; -fx-background-color: white; -fx-text-fill: orange;"/>
+
+        <Button text="C" onAction="#handleClear" GridPane.rowIndex="3" GridPane.columnIndex="0" style="-fx-font-size: 20; -fx-background-color: white; -fx-text-fill: orange;"/>
+        <Button text="0" onAction="#handleNumber" GridPane.rowIndex="3" GridPane.columnIndex="1" style="-fx-font-size: 20; -fx-background-color: white; -fx-text-fill: orange;"/>
+        <Button text="=" onAction="#handleEquals" GridPane.rowIndex="3" GridPane.columnIndex="2" style="-fx-font-size: 20; -fx-background-color: white; -fx-text-fill: orange;"/>
+        <Button text="/" onAction="#handleOperator" GridPane.rowIndex="3" GridPane.columnIndex="3" style="-fx-font-size: 20; -fx-background-color: white; -fx-text-fill: orange;"/>
+    </GridPane>
+</VBox>
